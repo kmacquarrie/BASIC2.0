@@ -1,0 +1,1 @@
+make: antlr4 -Dlanguage=Cpp -visitor -o gen grammar/Basic.g4 
