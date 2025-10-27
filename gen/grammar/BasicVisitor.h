@@ -27,11 +27,33 @@ public:
 
     virtual std::any visitCall(BasicParser::CallContext *context) = 0;
 
+    virtual std::any visitLet(BasicParser::LetContext *context) = 0;
+
     virtual std::any visitFor(BasicParser::ForContext *context) = 0;
 
-    virtual std::any visitNext(BasicParser::NextContext *context) = 0;
+    virtual std::any visitIf(BasicParser::IfContext *context) = 0;
 
-    virtual std::any visitExpr(BasicParser::ExprContext *context) = 0;
+    virtual std::any visitComparison(BasicParser::ComparisonContext *context) = 0;
+
+    virtual std::any visitId(BasicParser::IdContext *context) = 0;
+
+    virtual std::any visitEquality(BasicParser::EqualityContext *context) = 0;
+
+    virtual std::any visitParentheses(BasicParser::ParenthesesContext *context) = 0;
+
+    virtual std::any visitInt(BasicParser::IntContext *context) = 0;
+
+    virtual std::any visitEnd(BasicParser::EndContext *context) = 0;
+
+    virtual std::any visitLen(BasicParser::LenContext *context) = 0;
+
+    virtual std::any visitGoto(BasicParser::GotoContext *context) = 0;
+
+    virtual std::any visitListCommand(BasicParser::ListCommandContext *context) = 0;
+
+    virtual std::any visitPrint(BasicParser::PrintContext *context) = 0;
+
+    virtual std::any visitList(BasicParser::ListContext *context) = 0;
 
 
 };

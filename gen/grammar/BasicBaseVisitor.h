@@ -31,15 +31,59 @@ public:
     return visitChildren(ctx);
   }
 
+  virtual std::any visitLet(BasicParser::LetContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
   virtual std::any visitFor(BasicParser::ForContext *ctx) override {
     return visitChildren(ctx);
   }
 
-  virtual std::any visitNext(BasicParser::NextContext *ctx) override {
+  virtual std::any visitIf(BasicParser::IfContext *ctx) override {
     return visitChildren(ctx);
   }
 
-  virtual std::any visitExpr(BasicParser::ExprContext *ctx) override {
+  virtual std::any visitComparison(BasicParser::ComparisonContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitId(BasicParser::IdContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitEquality(BasicParser::EqualityContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitParentheses(BasicParser::ParenthesesContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitInt(BasicParser::IntContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitEnd(BasicParser::EndContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitLen(BasicParser::LenContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitGoto(BasicParser::GotoContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitListCommand(BasicParser::ListCommandContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitPrint(BasicParser::PrintContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitList(BasicParser::ListContext *ctx) override {
     return visitChildren(ctx);
   }
 

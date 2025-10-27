@@ -28,14 +28,47 @@ public:
   virtual void enterCall(BasicParser::CallContext * /*ctx*/) override { }
   virtual void exitCall(BasicParser::CallContext * /*ctx*/) override { }
 
+  virtual void enterLet(BasicParser::LetContext * /*ctx*/) override { }
+  virtual void exitLet(BasicParser::LetContext * /*ctx*/) override { }
+
   virtual void enterFor(BasicParser::ForContext * /*ctx*/) override { }
   virtual void exitFor(BasicParser::ForContext * /*ctx*/) override { }
 
-  virtual void enterNext(BasicParser::NextContext * /*ctx*/) override { }
-  virtual void exitNext(BasicParser::NextContext * /*ctx*/) override { }
+  virtual void enterIf(BasicParser::IfContext * /*ctx*/) override { }
+  virtual void exitIf(BasicParser::IfContext * /*ctx*/) override { }
 
-  virtual void enterExpr(BasicParser::ExprContext * /*ctx*/) override { }
-  virtual void exitExpr(BasicParser::ExprContext * /*ctx*/) override { }
+  virtual void enterComparison(BasicParser::ComparisonContext * /*ctx*/) override { }
+  virtual void exitComparison(BasicParser::ComparisonContext * /*ctx*/) override { }
+
+  virtual void enterId(BasicParser::IdContext * /*ctx*/) override { }
+  virtual void exitId(BasicParser::IdContext * /*ctx*/) override { }
+
+  virtual void enterEquality(BasicParser::EqualityContext * /*ctx*/) override { }
+  virtual void exitEquality(BasicParser::EqualityContext * /*ctx*/) override { }
+
+  virtual void enterParentheses(BasicParser::ParenthesesContext * /*ctx*/) override { }
+  virtual void exitParentheses(BasicParser::ParenthesesContext * /*ctx*/) override { }
+
+  virtual void enterInt(BasicParser::IntContext * /*ctx*/) override { }
+  virtual void exitInt(BasicParser::IntContext * /*ctx*/) override { }
+
+  virtual void enterEnd(BasicParser::EndContext * /*ctx*/) override { }
+  virtual void exitEnd(BasicParser::EndContext * /*ctx*/) override { }
+
+  virtual void enterLen(BasicParser::LenContext * /*ctx*/) override { }
+  virtual void exitLen(BasicParser::LenContext * /*ctx*/) override { }
+
+  virtual void enterGoto(BasicParser::GotoContext * /*ctx*/) override { }
+  virtual void exitGoto(BasicParser::GotoContext * /*ctx*/) override { }
+
+  virtual void enterListCommand(BasicParser::ListCommandContext * /*ctx*/) override { }
+  virtual void exitListCommand(BasicParser::ListCommandContext * /*ctx*/) override { }
+
+  virtual void enterPrint(BasicParser::PrintContext * /*ctx*/) override { }
+  virtual void exitPrint(BasicParser::PrintContext * /*ctx*/) override { }
+
+  virtual void enterList(BasicParser::ListContext * /*ctx*/) override { }
+  virtual void exitList(BasicParser::ListContext * /*ctx*/) override { }
 
 
   virtual void enterEveryRule(antlr4::ParserRuleContext * /*ctx*/) override { }

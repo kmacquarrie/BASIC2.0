@@ -12,8 +12,11 @@
 class  BasicLexer : public antlr4::Lexer {
 public:
   enum {
-    WS = 1, REM = 2, DEF = 3, FN = 4, FOR = 5, TO = 6, STEP = 7, NEXT = 8, 
-    ID = 9, INT = 10, LPAREN = 11, RPAREN = 12, EQUAL = 13
+    WS = 1, REM = 2, LET = 3, LIST = 4, DEF = 5, FN = 6, FOR = 7, TO = 8, 
+    STEP = 9, NEXT = 10, GOTO = 11, IF = 12, THEN = 13, END = 14, LEN = 15, 
+    PRINT = 16, ID = 17, INT = 18, STRING = 19, LPAREN = 20, RPAREN = 21, 
+    EQUAL = 22, UNEQUAL = 23, LT = 24, GT = 25, LEQ = 26, GEQ = 27, DASH = 28, 
+    DOLLAR = 29, SEMI = 30, COMMA = 31
   };
 
   explicit BasicLexer(antlr4::CharStream *input);
