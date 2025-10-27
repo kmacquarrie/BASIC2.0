@@ -79,7 +79,7 @@ LEN: 'LEN' ;
 PRINT: 'PRINT' ;
 
 // Objects and Literals
-ID: [A-Z] [A-Z0-9]* ('$'|'%'|'!')* ;
+ID: [A-Z] [A-Z0-9]* ('$')? ;
 INT: [0-9]+ ;
 STRING: '"' (~["\r\n])* '"' ; // String literal (must be enclosed by double quotes) - NEW LINE or CR not allowed
 LPAREN: '(' ;
